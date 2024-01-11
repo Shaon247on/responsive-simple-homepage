@@ -1,0 +1,150 @@
+body {
+    margin: 50px 90px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    gap: 4.5vw;
+    color: #909193;
+}
+
+.header-container>div>h2 {
+    color: #111729;
+}
+
+.mode-section {
+    background-color: #223344;
+    height: 30px;
+    width: 62px;
+    border-radius: 40px;
+    padding: 1px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin-top: 9vh;
+}
+
+.text-container {
+    /* display: block; */
+
+
+}
+
+.emoji-section {
+    color: #223344;
+    margin-bottom: 1vh;
+}
+
+.emoji-section::before {
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url('../smiling-face-with-sunglasses.svg');
+    background-size: contain;
+    float: left;
+    margin-right: 5px;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.4vh;
+    /* height: 200px; */
+    width: 600px;
+    /* padding-right: 15vw; */
+    font-size: 80px;
+    margin-bottom: 0vh;
+    color: #111729;
+    line-height: 80px;
+}
+
+h5 {
+
+    width: 400px;
+    font-size: 15px;
+    color: #223344;
+    margin-top: 0vh;
+}
+
+.image-container {
+    width: 50%;
+    /* border: 4px solid red; */
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.check-in-section {
+    display: flex;
+    gap: 2.5vw;
+}
+
+p::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../Done_ring_round_fill.svg');
+    background-size: contain;
+    float: left;
+    margin-right: 15px;
+
+}
+
+button {
+    margin: 0px 0.1vw;
+    width: 200px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Get {
+    background: transparent;
+    background-color: #2A4DD0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.live {
+    color: #2A4DD0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+   main{
+    flex-direction: column-reverse;
+    /* align-items: center; */
+   }
+   .image-container{
+    border: 5px solid red;
+    width: 82vw;
+    display: flex;
+    justify-content: center;   
+   }
+   .hero-image{
+    width: 58vw;
+   }
+  h1{
+    /* width: 60vh; */
+    font-size: 50px;
+  }    
+
+}
