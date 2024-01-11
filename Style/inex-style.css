@@ -30,6 +30,10 @@ body {
     align-items: center;
 }
 
+.menu{
+    display: none;
+}
+
 main {
     display: flex;
     /* flex-wrap: wrap; */
@@ -130,6 +134,11 @@ button {
 
 /* medium device */
 @media screen and (min-width:640px) and (max-width:1024px) {
+
+    .menu{
+        display: none;
+    }
+    
     main {
         flex-direction: column-reverse;
         /* align-items: center; */
@@ -154,7 +163,7 @@ button {
 }
 
 /* small device */
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px){
     body {
         margin: 10px 10px;
     }
@@ -179,9 +188,11 @@ button {
     }
 
     .mode-section {
-        width: 20vw;
-        padding: 0px 1px;
-        gap: 3px;
+        display: none;
+    }
+
+    .menu{
+        display: flex;
     }
 
     .image-container {
@@ -199,11 +210,6 @@ button {
 
     }
 
-    /* .text-section{
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    } */
     h4 {
         font-size: 8px;
     }
@@ -239,7 +245,6 @@ button {
         display: inline-block;
         width: 15px;
         height: 15px;
-        margin-right: 2px;
-
+        margin-right: 2px;}
 
 }
