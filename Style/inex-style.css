@@ -162,6 +162,7 @@ button {
     main {
         flex-direction: column-reverse;
         /* justify-content: center; */
+        margin: 0px 15px;
 
     }
 
@@ -220,14 +221,25 @@ button {
         width: 70vw;
     }
 
-    .button-container{
-        
-    }
     .Get{
         width: 100px;
         padding: 10px;
         height: 35px;
         font-size: 10px;      
     }
+    .check-in-section{
+        gap: 5px;
+    }
+    p{
+        font-size: 8px;
+        
+    }
+    p::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+
 
 }
